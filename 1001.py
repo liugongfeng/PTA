@@ -1,18 +1,6 @@
-def toDo(s):
-    if len(s) > 3:
-        return s[:-3] + ',' + s[-3:]
-    else:
-        return s
-
-
-def f(a, b):
-    result = a + b
-    if result > 0 :
-        print(toDo(str(result)))
-    else:
-        print("-" + toDo(str(result)[1:]))
-
-shuru = input()
-num = [int(e) for e in shuru.split(" ")]
-f(num[0], num[1])
-
+if __name__ == "__main__":
+  
+    line = input().split(" ")
+    a , b = int(line[0]), int(line[1])
+    
+    print('{:,}'.format(a+b))
